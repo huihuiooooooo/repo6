@@ -1,0 +1,16 @@
+攻略: https://blog.csdn.net/weixin_45355999/article/details/104313206?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-5.nonecase
+     https://blog.csdn.net/qq_35347459/article/details/75948358?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+windows下运行MR程序：
+        1.配置hadoop.dll放入C:/Windows/System32/下
+        2.(如果没有)下载winutils.exe放入本地${hadoop_home}/bin/下
+        3.pom.xml导入相关的jar坐标即可
+
+winutil.exe作用： hadoop主要基于linux编写，这个winutil.exe主要用于模拟linux下的目录环境。
+因此hadoop放在windows下运行的时候，需要这个辅助程序才能运行
+
+
+MR任务执行大概流程:https://blog.csdn.net/lu__peng/article/details/78910516
+    1.数据读取阶段 k1,v1
+    2.map执行完成 k2,v2
+    3.shuffle丶merge完毕以后 k3,v3
+    4.reduce完成 k4,v4
