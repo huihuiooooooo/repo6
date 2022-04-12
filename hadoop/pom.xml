@@ -10,7 +10,7 @@
 
     <properties>
         <!--设置hadoop版本-->
-        <hadoop.2.version>2.9.2</hadoop.2.version>
+        <hadoop.2.version>3.2.3</hadoop.2.version>
         <!--设置MAVEN打包时JDK的版本-->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
